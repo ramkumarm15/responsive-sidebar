@@ -4,8 +4,8 @@
 
 A Sidebar library to make it easier to develop a sidebar for a website.
 
-[+] Fully Responsive
-[+] Built with metismenu library to make menu in sidebar
+- [x] Fully Responsive
+- [x] Built with metismenu library to make menu in sidebar
 
 ## Installation
 
