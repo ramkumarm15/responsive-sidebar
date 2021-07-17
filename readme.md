@@ -11,4 +11,4 @@ A Sidebar library to make it easier to develop a sidebar for a website.
 
 ### Download
 
-[Download]()
+[Download](https://github.com/ramkumarm15/responsive-sidebar/archive/master.zip)
