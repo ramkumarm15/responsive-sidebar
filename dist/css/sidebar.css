@@ -1,0 +1,165 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a,
+a:hover {
+  text-decoration: none;
+}
+
+.wrapper {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  transition: all 0.3s;
+}
+
+/* Wrapper__sidebar */
+
+.wrapper__sidebar {
+  width: 260px;
+  z-index: 10;
+  background: #363d44;
+  top: 0;
+  bottom: 0;
+  position: fixed;
+  padding-top: 70px;
+  transition: all 0.3s;
+}
+
+.logo {
+  top: 0;
+  position: fixed;
+  width: 260px;
+  line-height: 70px;
+  color: #fafbfe;
+  font-size: 1.2rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.logo:hover {
+  color: #fafbfe;
+}
+
+.nav-menu {
+  padding: 0;
+}
+
+.nav-menu li {
+  list-style: none;
+}
+
+.nav-side .nav-side-title {
+  padding: 12px 30px;
+  letter-spacing: 0.03px;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  color: #78909c;
+  font-weight: 700;
+}
+
+.nav-side-link {
+  display: block;
+  color: #78909c;
+  padding: 10px 32px;
+  font-size: 1rem;
+  position: relative;
+  transition: all 0.3s ease-in;
+}
+
+.nav-side-link:hover {
+  color: #78909c;
+}
+
+.nav-side-link span {
+  vertical-align: middle;
+}
+
+.nav-side-link i {
+  display: inline-block;
+  line-height: 1.5;
+  margin: 0 10px 0;
+  vertical-align: middle;
+  font-size: 1rem;
+}
+
+.nav-side-link.has-arrow::after {
+  right: 30px;
+}
+
+.nav-side-level-two li a {
+  display: block;
+  padding: 8px 30px;
+  position: relative;
+  font-size: 0.8rem;
+  transition: all 0.3s;
+  color: #78909c;
+}
+
+.nav-side .mm-active > a {
+  color: #fafbfe;
+}
+
+/* Wrapper main section */
+
+.wrapper__main {
+  margin-left: 260px;
+  z-index: 10;
+  overflow: hidden;
+  padding: 70px 12px;
+  min-height: 100vh;
+}
+
+/* Horizontal navbar  */
+
+.wrapper_navbar {
+  padding: 0 24px;
+  background: #fff;
+  min-height: 70px;
+  position: fixed;
+  left: 260px;
+  top: 0;
+  right: 0;
+  z-index: 1001;
+  box-shadow: 0 0 40px rgb(51 51 51 / 10%);
+}
+
+.menu_toggler {
+  display: none;
+  border: none;
+  color: #363d44;
+  max-height: 70px;
+  line-height: 70px;
+  width: 65px;
+  background-color: transparent;
+  cursor: pointer;
+  vertical-align: middle;
+}
+
+.menu_toggler .menuIcon{
+    width: 36px;
+    height: 36px;
+    fill: #363d44;
+}
+
+@media screen and (max-width: 992px) {
+  .wrapper__sidebar {
+    display: none;
+  }
+
+  .side_enable .wrapper__sidebar {
+    display: block;
+  }
+  .wrapper__main {
+    margin-left: 0;
+  }
+  .wrapper_navbar {
+    left: 0;
+  }
+  .menu_toggler {
+    display: inline-block;
+  }
+}
